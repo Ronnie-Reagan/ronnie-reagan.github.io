@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ronnie Reagan Projects</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7010587991992406"
+     crossorigin="anonymous"></script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 1rem; }
+    h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.5rem 0; }
+    a { text-decoration: none; color: #0066cc; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>My GitHub Pages Projects</h1>
+  <p>Explore my published sites and experiments:</p>
+  <ul id="projects"></ul>
+
+  <script>
+    const projects = [
+      { name: "DFPWM Jukebox", path: "DFPWM_LIBRARY" },
+    ];
+
+    const list = document.getElementById("projects");
+    projects.forEach(p => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `https://ronnie-reagan.github.io/${p.path}/`;
+      a.textContent = p.name;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
