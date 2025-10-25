@@ -18,7 +18,7 @@ By using, running, or redistributing any code or application (source or release)
 
 4. **Identification**
    - To verify authenticity or reference this license, include a link or tag:  
-
+   - https://github.com/Ronnie-Reagan/ronnie-reagan.github.io/tree/main?tab=License-1-ov-file#
 
 ---
 
