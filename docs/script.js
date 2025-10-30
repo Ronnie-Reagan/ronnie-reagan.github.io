@@ -1,17 +1,31 @@
 const projects = [
+  { name: "Main Site", path: "" },
+  { name: "Audio Visualizer Extension", path: "AudioVisualizerExtension" },
+  { name: "BlackJack Simulator", path: "BlackJack_Sim" },
+  { name: "Cherax Lua Doc Viewer [offline]", path: "cherax_lua_doc_viewer" },
+  { name: "Cherax Viewer Pro [offline]", path: "Cherax_Viewer_Pro" },
+  { name: "Click Me Game", path: "Click_Me_Game" },
+  { name: "Dayton's Menu", path: "DaytonsMenu" },
   { name: "DFPWM Jukebox", path: "DFPWM_LIBRARY" },
-  { name: "Rust Calculator", path: "rustCalculator" },
+  { name: "Draw the Path", path: "Draw_the_Path" },
   { name: "Solar Calculator", path: "FredsSolarCaclculator" },
+  { name: "[NSFW] Gaymers Game", path: "Gaymers_Game" },
+  { name: "Mod Reagan", path: "Mod-Reagan" },
+  { name: "Radio Station [offline]", path: "radioStation" },
+  { name: "Reagan's ECU [offline]", path: "ReagansECU" },
+  { name: "Rust Calculator", path: "rustCalculator" },
+  { name: "ScriptThis [offline]", path: "ScriptThis" },
+  //{ name: "Slab", path: "Slab" },
   { name: "Info Viewer", path: "test" },
   { name: "WebRTC Chat", path: "WebRTC-Chat" },
-  { name: "Bad Clicker Game", path: "Click_Me_Game" },
-  { name: "[NSFW] Gaymers Game", path: "Gaymers_Game" },
+  { name: "Weed Doc", path: "weedDoc" },
 ];
 
 const list = document.getElementById("projects");
 for (const { name, path } of projects) {
   const li = document.createElement("li");
-  li.innerHTML = `<a href="https://ronnie-reagan.github.io/${path}/" target="_blank" rel="noopener">${name}</a>`;
+  const href = `https://ronnie-reagan.github.io/${path ? path + "/" : ""}`;
+  li.innerHTML = `<a href="${href}" target="_blank" rel="noopener">${name}</a>`;
   list.appendChild(li);
 }
 
