@@ -1,5 +1,6 @@
 const projects = [
   { name: "Main Site", path: "" },
+  { name: "Web-Based Speedometer", path: "web_based-speedometer" },
   { name: "Audio Visualizer Extension", path: "AudioVisualizerExtension" },
   { name: "BlackJack Simulator", path: "BlackJack_Sim" },
   { name: "Cherax Lua Doc Viewer [offline]", path: "cherax_lua_doc_viewer" },
