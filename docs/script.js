@@ -15,7 +15,7 @@ const projects = [
   { name: "Reagan's ECU [offline]", path: "ReagansECU" },
   { name: "Rust Calculator", path: "rustCalculator" },
   { name: "ScriptThis [offline]", path: "ScriptThis" },
-  //{ name: "Slab", path: "Slab" },
+  { name: "Auto Pilot", path: "Auto_Pilot" },
   { name: "Info Viewer", path: "test" },
   { name: "WebRTC Chat", path: "WebRTC-Chat" },
   { name: "Weed Doc", path: "weedDoc" },
