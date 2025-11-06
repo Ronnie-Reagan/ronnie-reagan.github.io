@@ -1,5 +1,6 @@
 const projects = [
   { name: "Main Site", path: "" },
+  { name: "Example Website", path: "Your_Company_Name_Here" },
   { name: "Web-Based Speedometer", path: "web_based-speedometer" },
   { name: "Audio Visualizer Extension", path: "AudioVisualizerExtension" },
   { name: "BlackJack Simulator", path: "BlackJack_Sim" },
