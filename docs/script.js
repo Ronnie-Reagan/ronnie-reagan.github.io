@@ -1,5 +1,6 @@
 const projects = [
   { name: "Main Site", path: "" },
+  { name: "DonCraft - Rust", path: "DonCraft-Rust" },
   { name: "Procedural Launcher", path: "procedural_launcher" },
   { name: "Example Website", path: "Your_Company_Name_Here" },
   { name: "Web-Based Speedometer", path: "web_based-speedometer" },
