@@ -28,7 +28,7 @@ const projects = [
 const list = document.getElementById("projects");
 for (const { name, path } of projects) {
   const li = document.createElement("li");
-  const href = `https://donreagan.ca/${path ? path + "/" : ""}`;
+  const href = `http://donreagan.ca/${path ? path + "/" : ""}`;
   li.innerHTML = `<a href="${href}" target="_blank" rel="noopener">${name}</a>`;
   list.appendChild(li);
 }
