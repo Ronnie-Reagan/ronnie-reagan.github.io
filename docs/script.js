@@ -227,9 +227,9 @@ const liveSystems = [
     status: "Load preview",
   },
   {
-    title: "Audio Visualizer",
-    description: "Chromium extension for audio visualization",
-    projectPath: "AudioVisualizerExtension",
+    title: "Procedural Launcher",
+    description: "Procedurally crafted launcher-game",
+    projectPath: "procedural_launcher",
     status: "Load preview",
   },
 ];
