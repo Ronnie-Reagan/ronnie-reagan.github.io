@@ -4,53 +4,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="9DyxzUQGztghWE8FzmfT74pqARTpPCvBxJaymXoeb8Q">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Don Reagan Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Don Reagan's personal site for projects, experiments, tools, demos, and embedded web systems.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Don Reagan — Projects, systems, and experiments</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Don Reagan Projects</h1>
-    <p class="subtitle">Public repositories, demos, and experiments.</p>
-  </header>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark">DR</span>
+        <span class="brand-copy">
+          <strong>Don Reagan</strong>
+          <span>projects / systems / experiments</span>
+        </span>
+      </a>
 
-  <main>
-    <section class="projects-section">
-      <ul id="projects"></ul>
-    </section>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#live">Live systems</a>
+        <a href="#featured">Featured</a>
+        <a href="#archive">Archive</a>
+        <a href="https://github.com/Ronnie-Reagan" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
 
-    <section class="support-section" aria-labelledby="support-heading">
-      <h2 id="support-heading">Support My Work</h2>
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy card">
+          <p class="eyebrow">Don Reagan</p>
+          <h1>I build random things, useful things, and some things that probably should not exist.</h1>
+          <p class="hero-text">
+            This is my personal site for the projects I have made, the systems I am messing with, and the ideas that turned into something real.
+            A few of them are live here on the page, a few are featured properly, and the rest are in the archive without turning this into a giant wall of links.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#live">Open live systems</a>
+            <a class="button button-secondary" href="#featured">See featured work</a>
+          </div>
+
+          <ul class="hero-notes" aria-label="Site notes">
+            <li>Live systems on the homepage where they make sense</li>
+            <li>Featured projects first, everything else underneath</li>
+            <li>Built to feel like a personal site, not a feed</li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel card" aria-labelledby="hero-panel-heading">
+          <div class="panel-heading">
+            <p class="eyebrow">Overview</p>
+            <h2 id="hero-panel-heading">What is here</h2>
+          </div>
+
+          <div class="hero-stats" id="hero-stats"></div>
+
+          <div class="hero-mini-list">
+            <div>
+              <span class="mini-label">Current focus</span>
+              <strong>Flight simulation, audio tools, browser experiments, utilities, and weird side projects</strong>
+            </div>
+            <div>
+              <span class="mini-label">What this site is</span>
+              <strong>A personal project page with some actual systems embedded into it</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="live" aria-labelledby="live-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive section</p>
+            <h2 id="live-heading">Live systems</h2>
+          </div>
+          <p class="section-copy">
+            These are projects that make more sense being used than described. They load on demand so the homepage stays fast instead of trying to run everything at once.
+          </p>
+        </div>
+
+        <div class="live-grid" id="live-systems"></div>
+      </section>
+
+      <section class="section" id="featured" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Curated</p>
+            <h2 id="featured-heading">Featured work</h2>
+          </div>
+          <p class="section-copy">
+            These are the projects worth putting up front. The rest still matter, they just do not all need the exact same weight on the homepage.
+          </p>
+        </div>
+
+        <div class="featured-grid" id="featured-projects"></div>
+      </section>
+
+      <section class="section" id="archive" aria-labelledby="archive-heading">
+        <div class="section-heading archive-heading">
+          <div>
+            <p class="eyebrow">Browse the rest</p>
+            <h2 id="archive-heading">Project archive</h2>
+          </div>
+          <p class="section-copy">
+            Everything else is down here in a cleaner archive so the site can keep growing without turning into a mess.
+          </p>
+        </div>
+
+        <div class="archive-toolbar card">
+          <label class="search-wrap" for="project-search">
+            <span class="search-label">Search</span>
+            <input id="project-search" type="search" placeholder="Search projects, tags, or categories">
+          </label>
+
+          <div class="filter-group" id="project-filters" aria-label="Project filters"></div>
+        </div>
+
+        <div class="archive-grid" id="archive-projects"></div>
+      </section>
+
+      <section class="section" aria-labelledby="support-heading">
+        <div class="support-grid">
+          <article class="support-copy card">
+            <p class="eyebrow">Support</p>
+            <h2 id="support-heading">Support the work</h2>
+            <p>
+              If you got something out of this stuff and want to help fund more of it, this is where you do that.
+            </p>
+            <p class="support-small">
+              I would rather keep the page about the work first and put support down here where it belongs.
+            </p>
+          </article>
+
+          <aside class="support-button-card card" aria-label="Support button">
+            <script
+              type="text/javascript"
+              src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+              data-name="bmc-button"
+              data-slug="donreagan"
+              data-color="#7dd3fc"
+              data-emoji=""
+              data-font="Inter"
+              data-text="Buy me a Coffee"
+              data-outline-color="#020617"
+              data-font-color="#020617"
+              data-coffee-color="#f59e0b">
+            </script>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <p>
-        If you find these projects useful or interesting, you can help support future development.
+        © <span id="year"></span> Don Reagan ·
+        <a href="https://github.com/Ronnie-Reagan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Ronnie-Reagan/ronnie-reagan.github.io/tree/main?tab=License-1-ov-file#" target="_blank" rel="noopener">License</a>
       </p>
-
-      <div class="support-button-wrap">
-        <script
-          type="text/javascript"
-          src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-          data-name="bmc-button"
-          data-slug="donreagan"
-          data-color="#58a6ff"
-          data-emoji=""
-          data-font="Inter"
-          data-text="Buy me a Coffee"
-          data-outline-color="#000000"
-          data-font-color="#000000"
-          data-coffee-color="#d6984b">
-        </script>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      © <span id="year"></span> Don Reagan ·
-      <a href="https://github.com/Ronnie-Reagan" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/Ronnie-Reagan/ronnie-reagan.github.io/tree/main?tab=License-1-ov-file#" target="_blank" rel="noopener">License</a>
-    </p>
-  </footer>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
